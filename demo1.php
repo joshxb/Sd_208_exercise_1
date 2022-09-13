@@ -1,7 +1,4 @@
 <?php
-
-    $names = Array("Joshua", "Janrae", "Jomel", "Myla");
-
     function descend_Array($array){
         $string = "";
         rsort($array);
@@ -18,6 +15,8 @@
         return $string;
         
     }
+    $names = Array("Joshua", "Janrae", "Jomel", "Myla");
+
     echo descend_Array($names);
     echo descend_Array(["Joseph", "Nino", "Edward", "Felip"]);
     echo descend_Array(Array("April", "Jordan", "Sta. Ana", "Rose"));
