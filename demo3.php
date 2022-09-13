@@ -1,22 +1,34 @@
 <?php
     $array = Array("Sophia"=>"31", "Jacob"=>"41", "William"=>"39", "Ramesh"=>"40");
-
     function asc_Val($array){
         asort($array);
-        return "<h3>Ascending order sort by value: </h3>".implode(" ", $array);
+        echo "<h3>Ascending order sort by value: </h3>";
+        foreach($array as $x => $vals){
+            echo "$x => $vals<br>";
+        }
     }
     function asc_Key($array){
         ksort($array);
-        return "<h3>Ascending order sort by key: </h3>".implode(" ", $array);
+        echo "<h3>Ascending order sort by key: </h3>";
+        foreach($array as $x => $vals){
+            echo "$x => $vals<br>";
+        }
     }
     function desc_Val($array){
         arsort($array);
-        return "<h3>Descending order sort by value: </h3>".implode(" ", $array);
+        echo "<h3>Descending order sort by value: </h3>";
+        foreach($array as $x => $vals){
+            echo "$x => $vals<br>";
+        }
     }
     function desc_Key($array){
         krsort($array);
-        return "<h3>Descending order sort by key: </h3>".implode(" ", $array);
+        echo "<h3>Descending order sort by key: </h3>";
+        foreach($array as $x => $vals){
+            echo "$x => $vals<br>";
+        }
     }
+
     function myfunction($v) {
         $v=strtolower($v);
         return $v;
