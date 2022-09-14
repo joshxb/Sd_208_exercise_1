@@ -10,6 +10,16 @@
     <title>
         Multiplication Table
     </title>
+
+    <style>
+        body{
+            background: rgba(0,0,0,0.3);
+        }
+        .row{
+            display:flex;
+            justify-content:center;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,8 +34,8 @@
          ?>
 
 
-    <div class="container">
-        <div class="row">
+    <div class="container" >
+        <div class="row" >
             <div class="col-sm-1 bg-primary">
                 <?php
                 for ($count = 1; $count <= 10; $count++) {
@@ -98,7 +108,7 @@
                 }
                 ?>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 bg-warning">
                 <?php
                 for ($count = 1; $count <= 10; $count++) {
                     echo ("10 x " . $count . "=" . $count * 10);
