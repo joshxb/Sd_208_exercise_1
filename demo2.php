@@ -13,7 +13,7 @@
 
     <style>
         body{
-            background: rgba(0,0,0,0.3);
+            background: rgba(71, 166, 209, 0.89);
         }
         .row{
             display:flex;
