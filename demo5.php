@@ -9,10 +9,25 @@
         h2, p {
             text-align: center;
         }
+        form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 80px 0 80px;
+        }
     </style>
 </head>
 <body>
     <h2>Largest Number</h2>
+    <form action="">
+        <label for="1st_num" class="firstnum">First no:</label>
+        <input type="text" class="" name="1st_num"><br>
+        <label for="2nd_num" class="firstnum">Second no:</label>
+        <input type="text" class="" name="2nd_num"><br>
+        <label for="3rd_num" class="firstnum">Third no:</label>
+        <input type="text" class="" name="3rd_num"><br>
+        <input type="submit">
+    </form>
 </body>
 </html>
 <?php 
