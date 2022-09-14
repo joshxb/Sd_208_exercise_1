@@ -10,19 +10,23 @@
     </style>
 </head>
 <body>
-    <h3>Numbers from 1 to 50</h3>
+    <h3 >Numbers from 1 to 50</h3>
 <?php
     $start = 1;
+    $color1 = 'style="color:red"';
+    $color2 = 'style="color:blue"';
+    $color3 = 'style="color:green"';
+    
     echo "<ul>";
     for(;$start <= 50;){
         if ($start % 3 == 0 && $start % 5 == 0){
-            echo "<li>FizzBuzz</li>";
+            echo "<li $color3>FizzBuzz</li>";
         }   
         else if ($start % 3 == 0){
-            echo "<li>Fizz</li>";
+            echo "<li $color1>Fizz</li>";
         }
         else if ($start % 5 == 0){
-            echo "<li>Buzz</li>";
+            echo "<li $color2>Buzz</li>";
         }
         else {
             echo "<li>$start</li>";
