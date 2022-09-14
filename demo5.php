@@ -34,9 +34,8 @@
         <input type="text" class="" name="3rd_num" required><br>
         <input type="submit" name="btn">
     </form>
-</body>
-</html>
-<?php 
+
+    <?php 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["btn"])){
@@ -59,3 +58,5 @@ function maxNum($num1, $num2, $num3){
 }
     
 ?>
+</body>
+</html>
