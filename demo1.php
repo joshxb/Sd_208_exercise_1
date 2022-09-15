@@ -21,19 +21,19 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item d-flex">
-                        <a class="nav-link bg-gradient" href="javascript:void(0)">Demo1</a>
+                        <a class="nav-link bg-gradient" href="./demo1.php">Demo1</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link bg-gradient" href="javascript:void(0)">Demo2</a>
+                        <a class="nav-link bg-gradient" href="./demo2.php">Demo2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link bg-gradient" href="javascript:void(0)">Demo3</a>
+                        <a class="nav-link bg-gradient" href="./demo3.php">Demo3</a>
                     </li>
                     <li class="nav-item bg-gradient">
-                        <a class="nav-link" href="javascript:void(0)">Demo4</a>
+                        <a class="nav-link" href="./demo4.php">Demo4</a>
                     </li>
                     <li class="nav-item bg-gradient">
-                        <a class="nav-link" href="javascript:void(0)">Demo5</a>
+                        <a class="nav-link" href="./demo5.php">Demo5</a>
                     </li>
                 </ul>
                 <button class="navbar_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#menus">
@@ -49,19 +49,19 @@
         <div class="offcanvas-body">
             <h1 class="offcanvas-title">List of Demos</h1>
             <ul>
-                <a href="">
+                <a href="./demo1.php">
                     <li>Descending Order Arrays</li>
                 </a>
-                <a href="">
+                <a href="./demo2.php">
                     <li>Multiplication Table</li>
                 </a>
-                <a href="">
+                <a href="./demo3.php">
                     <li>Sort of Arrays</li>
                 </a>
-                <a href="">
+                <a href="./demo4.php">
                     <li>Numbers from 1 to 50</li>
                 </a>
-                <a href="">
+                <a href="./demo5.php">
                     <li>The Largest Number</li>
                 </a>
             </ul>

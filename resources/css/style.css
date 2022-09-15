@@ -11,11 +11,10 @@ body {
     border-right: 5px solid white;
     border-bottom: 2px solid white;
     padding-top: 5rem;
-    height: 30rem;
+    height: 35rem;
     width: 95%;
     margin: auto;
     overflow-y: auto;
-
 }
 .main::-webkit-scrollbar{
     display: none;
