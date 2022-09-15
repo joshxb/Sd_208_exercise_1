@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./resources/img/web_dev_logo.png">
     <link rel="stylesheet" href="./resources/css/bootstap.min.css">
     <title>demo5</title>
     <link rel="stylesheet" href="./resources/css/style.css">
