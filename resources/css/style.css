@@ -1,6 +1,23 @@
 body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     background: rgba(71, 166, 209, 0.89);
+}
+
+.main {
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-bottom: 2px solid white;
     padding-top: 5rem;
+    height: 30rem;
+    width: 95%;
+    margin: auto;
+    overflow-y: auto;
+
+}
+.main::-webkit-scrollbar{
+    display: none;
 }
 
 h2,
@@ -51,13 +68,16 @@ ul {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
     border: transparent;
 }
+
 .canvas {
     background: black !important;
-    
+
 }
-.canvas .offcanvas-body{
+
+.canvas .offcanvas-body {
     overflow: hidden;
 }
+
 .canvas .offcanvas-body img {
     width: 45%;
     position: absolute;
@@ -74,9 +94,11 @@ ul {
     text-align: center;
     margin-bottom: 20px;
 }
-.canvas a{
+
+.canvas a {
     text-decoration: none;
 }
+
 .canvas li {
     text-align: center;
     cursor: pointer;
