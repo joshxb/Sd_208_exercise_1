@@ -5,23 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./resources/css/bootstap.min.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <script src="./resources/js/boostrap_bundle.js"></script>
     <title>Demo_4</title>
-    <style>
-        li {
-            font-size: 18px;
-        }
-
-        body {
-            background: rgba(71, 166, 209, 0.89);
-            padding-top: 2rem;
-        }
-
-        h2,h3,p,label,li {text-align: center;font-family: Arial, Helvetica, sans-serif;}
-        ul {
-            list-style-type: none;
-        }
-    </style>
 </head>
 
 <body>

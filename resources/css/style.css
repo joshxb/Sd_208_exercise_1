@@ -1,0 +1,50 @@
+body {
+    background: rgba(71, 166, 209, 0.89);
+    padding-top: 5rem;
+}
+
+h2,
+h3,
+h5,
+p,
+label,
+li,
+input {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    padding: 0 80px 0 80px;
+    grid-template-columns: repeat(1, 0.2fr);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+.logo {
+    width: 45px;
+}
+.navbar{
+    padding: 2px;
+}
+.nav-item:hover {
+    background-color: black;
+    transition: 0.5s all;
+}
+/* .select{
+    background: transparent;
+    color: rgba(255, 255, 255, .55);
+    border: transparent;
+} */
