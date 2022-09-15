@@ -108,7 +108,12 @@
         }
 
         ?>
+      
     </main>
+    <div class="d-flex mt-2 justify-content-between px-5">
+            <button type="button" class="btn btn-outline-primary">Prev</button>
+            <button type="button" class="btn btn-outline-primary">Next</button>
+        </div>
 
 
 </body>
