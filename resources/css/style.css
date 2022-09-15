@@ -33,18 +33,58 @@ li {
 ul {
     list-style-type: none;
 }
+
 .logo {
     width: 45px;
 }
-.navbar{
+
+.navbar {
     padding: 2px;
 }
+
 .nav-item:hover {
     background-color: black;
     transition: 0.5s all;
 }
-/* .select{
-    background: transparent;
-    color: rgba(255, 255, 255, .55);
+
+.navbar_button {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
     border: transparent;
-} */
+}
+.canvas {
+    background: black !important;
+    
+}
+.canvas .offcanvas-body{
+    overflow: hidden;
+}
+.canvas .offcanvas-body img {
+    width: 45%;
+    position: absolute;
+    right: 6.5rem;
+    bottom: 3rem;
+}
+
+.canvas button {
+    background-color: rgba(255, 0, 0, 0.973);
+}
+
+.canvas h1 {
+    color: rgba(255, 255, 255, 0.774);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.canvas a{
+    text-decoration: none;
+}
+.canvas li {
+    text-align: center;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.774);
+    padding: 10px 0 10px 0;
+    transition: 0.2s ease-in;
+}
+
+.canvas li:hover {
+    background: rgba(71, 166, 209, 0.89);
+}

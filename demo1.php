@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/bootstap.min.css">
     <link rel="stylesheet" href="./resources/css/style.css">
     <script src="./resources/js/boostrap_bundle.js"></script>
@@ -35,10 +36,38 @@
                         <a class="nav-link" href="javascript:void(0)">Demo5</a>
                     </li>
                 </ul>
-
+                <button class="navbar_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#menus">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </div>
     </nav>
+    <div class="offcanvas offcanvas-end canvas" id="menus">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h1 class="offcanvas-title">List of Demos</h1>
+            <ul>
+                <a href="">
+                    <li>Descending Order Arrays</li>
+                </a>
+                <a href="">
+                    <li>Multiplication Table</li>
+                </a>
+                <a href="">
+                    <li>Sort of Arrays</li>
+                </a>
+                <a href="">
+                    <li>Numbers from 1 to 50</li>
+                </a>
+                <a href="">
+                    <li>The Largest Number</li>
+                </a>
+            </ul>
+            <img src="./resources/img/web_dev_logo.png" alt="">
+        </div>
+    </div>
     <h2>Descending Order Arrays</h2>
     <form class="was-validated" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <label for="name_input" class="name">Names:</label>
