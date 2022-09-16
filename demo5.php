@@ -73,13 +73,27 @@
     <div class="mask bg-black w-100 h-100"></div>
     <main class="main">
         <h2>Largest Number</h2>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form class="was-validated" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+        <div class="mb-3">
             <label for="1st_num" class="firstnum">First number:</label>
-            <input type="text" class="" name="1st_num" required><br>
+            <input type="number" class="form-control" name="1st_num" required>
+            <label class="valid-feedback" for="1st_num">Valid.</label>
+            <label class="invalid-feedback" for="1st_num">Please fill out this field.</label>
+        </div>
+        <div class="mb-3">
             <label for="2nd_num" class="firstnum">Second number:</label>
-            <input type="text" class="" name="2nd_num" required><br>
+            <input type="number" class="form-control" name="2nd_num" required>
+            <label class="valid-feedback">Valid.</label>
+            <label class="invalid-feedback">Please fill out this field.</label>
+        </div>
+        <div class="mb-3">     
             <label for="3rd_num" class="firstnum">Third number:</label>
-            <input type="text" class="" name="3rd_num" required><br>
+            <input type="number" class="form-control" name="3rd_num" required>
+            <p class="valid-feedback">Valid.</p>
+            <p class="invalid-feedback">Please fill out this field.</p>
+        </div>
+          
+          
             <input type="submit" name="btn">
         </form>
 
@@ -90,7 +104,6 @@
                 $first_num = $_POST["1st_num"];
                 $second_num = $_POST["2nd_num"];
                 $third_num = $_POST["3rd_num"];
-                echo "<h3>All numbers: </h3>" . "<h5>[$first_num, $second_num, $third_num]</h5>";
                 echo "<h3>Largest number:</h3>";
                 echo "<h5>" . maxNum($first_num, $second_num, $third_num) . "</h5>";
             }

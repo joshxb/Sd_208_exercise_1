@@ -72,7 +72,7 @@
     <div class="mask bg-black w-100 h-100"></div>
     <main class="main text-center">
         <h3>Numbers from 1 to 50</h3>
-        <button class="bg-black text-light p-2 border border-2"  onclick="Writer()" type="button" >Start</button>
+        <button class="bg-black text-light p-2 px-5 border border-2 rounded"  onclick="Writer(this)" type="button" >Start</button>
         <div id="number-list" style="text-align:center;"></div>
         <script>
             var text = document.getElementById('number-list');
@@ -113,19 +113,6 @@
         echo "</ul>";
 
         ?>
-        <script>
-            var i = 1;
-            var speed = 50;
-
-            function Writer() {
-                if (i < txt.length) {
-                    text.innerHTML += txt[i];
-                    i++;
-                    setTimeout(Writer, speed);
-                }
-            }
-        </script>
-
     </main>
     <div class="d-flex mt-2 justify-content-between px-5">
         <button type="button" class="btn btn-outline-info" onclick="progress_prev(4)">Prev</button>
@@ -138,5 +125,6 @@
     </div>
 
 </body>
+<script src="./resources/js/typewriter.js"></script>
 
 </html>

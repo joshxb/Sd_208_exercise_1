@@ -77,21 +77,27 @@
         echo "<br>";
         ?>
         <!-- <div class="container-xxl"> -->
-        <h1 class="text-center">Multiplication Table</h1>
+        <h1 class="text-center heading">Multiplication Table</h1>
         <?php
         echo "<br>";
         ?>
+        
 
+     <?php
+        for ($count = 1; $count <= 10; $count++) {
+            $phrase = "1 x ";
+            $compute =  $count * 1;
+                        // echo ("1 x " . $count . "=" . $count * 1);
+                        // echo ("<br>");
+                        echo "<script> 
+                            cont_page[$count] = '$phrase $count = $compute';
+                        </script>";
+        }
+    ?>
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-1 bg-primary">
-                    <?php
-                    for ($count = 1; $count <= 10; $count++) {
-                        echo ("1 x " . $count . "=" . $count * 2);
-                        echo ("<br>");
-                    }
-                    ?>
+                <div class="col-sm-1 bg-primary first_page">
                 </div>
                 <div class="col-sm-1 bg-secondary">
                     <?php
@@ -168,6 +174,12 @@
             </div>
         </div>
     </main>
+ 
+   <script>
+        var page_1 = document.getElementsByClassName("first_page")[0];
+        var cont_page = new Array();
+    </script>
+  
     <div class="d-flex mt-2 justify-content-between px-5">
         <button type="button" class="btn btn-outline-info" onclick="progress_prev(2)">Prev</button>
         <div class="container progress-container w-50" style="position:relative;">
@@ -178,7 +190,8 @@
         <button type="button" class="btn btn-outline-info" onclick="progress_next(2)">Next</button>
     </div>
 
-
+    <button type="button" onclick="Multiplier()">start</button>
 </body>
 
+<script src="./resources/js/multiplier.js"></script>
 </html>
