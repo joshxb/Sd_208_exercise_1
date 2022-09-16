@@ -105,7 +105,7 @@
                 $second_num = $_POST["2nd_num"];
                 $third_num = $_POST["3rd_num"];
                 echo "<h3>Largest number:</h3>";
-                echo "<h5>" . maxNum($first_num, $second_num, $third_num) . "</h5>";
+                echo "<h5>[ $first_num, $second_num, $third_num ] => " . maxNum($first_num, $second_num, $third_num) . "</h5>";
             }
         }
         function maxNum($num1, $num2, $num3)

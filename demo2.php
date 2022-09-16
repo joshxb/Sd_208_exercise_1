@@ -83,102 +83,126 @@
         ?>
         
 
-     <?php
-        for ($count = 1; $count <= 10; $count++) {
-            $phrase = "1 x ";
-            $compute =  $count * 1;
-                        // echo ("1 x " . $count . "=" . $count * 1);
-                        // echo ("<br>");
-                        echo "<script> 
-                            cont_page[$count] = '$phrase $count = $compute';
-                        </script>";
-        }
-    ?>
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-1 bg-primary first_page">
+                <div class="col-sm-1 bg-primary w-auto first_page p-3">
                 </div>
-                <div class="col-sm-1 bg-secondary">
-                    <?php
-                    for ($count = 1; $count <= 10; $count++) {
-                        echo ("2 x " . $count . "=" . $count * 2);
-                        echo ("<br>");
-                    }
-                    ?>
+                <div class="col-sm-1 bg-secondary w-auto second_page p-3">
                 </div>
-                <div class="col-sm-1 bg-success">
-                    <?php
-                    for ($count = 1; $count <= 10; $count++) {
-                        echo ("3 x " . $count . "=" . $count * 3);
-                        echo ("<br>");
-                    }
-                    ?>
+                <div class="col-sm-1 bg-success w-auto third_page p-3">
                 </div>
-                <div class=" col-sm-1 bg-info">
-                    <?php
-                    for ($count = 1; $count <= 10; $count++) {
-                        echo ("4 x " . $count . "=" . $count * 4);
-                        echo ("<br>");
-                    }
-                    ?>
+                <div class=" col-sm-1 bg-info w-auto fourth_page p-3">
                 </div>
-                <div class=" col-sm-1 bg-primary">
-                    <?php
-                    for ($count = 1; $count <= 10; $count++) {
-                        echo ("5 x " . $count . "=" . $count * 5);
-                        echo ("<br>");
-                    }
-                    ?>
+                <div class=" col-sm-1 bg-primary w-auto fifth_page p-3">
                 </div>
-                <div class="col-sm-1 bg-warning">
-                    <?php
-                    for ($count = 1; $count <= 10; $count++) {
-                        echo ("6 x " . $count . "=" . $count * 6);
-                        echo ("<br>");
-                    }
-                    ?>
-                </div>
-                <div class="col-sm-1 bg-secondary">
-                    <?php
-                    for ($count = 1; $count <= 10; $count++) {
-                        echo ("7 x " . $count . "=" . $count * 7);
-                        echo ("<br>");
-                    }
-                    ?>
-                </div>
-                <div class="col-sm-1 bg-info">
-                    <?php
-                    for ($count = 1; $count <= 10; $count++) {
-                        echo ("8 x " . $count . "=" . $count * 8);
-                        echo ("<br>");
-                    }
-                    ?>
-                </div>
-                <div class="col-sm-1 bg-primary">
-                    <?php
-                    for ($count = 1; $count <= 10; $count++) {
-                        echo ("9 x " . $count . "=" . $count * 9);
-                        echo ("<br>");
-                    }
-                    ?>
-                </div>
-                <div class="col-sm-1 bg-warning w-auto">
-                    <?php
-                    for ($count = 1; $count <= 10; $count++) {
-                        echo ("10 x " . $count . "=" . $count * 10);
-                        echo ("<br>");
-                    }
-                    ?>
-                </div>
+                <div class="col-sm-1 bg-warning w-auto sixth_page p-3"></div>
+                <div class="col-sm-1 bg-secondary w-auto seventh_page p-3"></div>
+                <div class="col-sm-1 bg-info w-auto eight_page p-3"></div>
+                <div class="col-sm-1 bg-primary w-auto ninth_page p-3"></div>
+                <div class="col-sm-1 bg-warning w-auto tenth_page p-3"></div>
             </div>
         </div>
     </main>
  
    <script>
         var page_1 = document.getElementsByClassName("first_page")[0];
+        var page_2 = document.getElementsByClassName("second_page")[0];
+        var page_3 = document.getElementsByClassName("third_page")[0];
+        var page_4 = document.getElementsByClassName("fourth_page")[0];
+        var page_5 = document.getElementsByClassName("fifth_page")[0];
+        var page_6 = document.getElementsByClassName("sixth_page")[0];
+        var page_7 = document.getElementsByClassName("seventh_page")[0];
+        var page_8 = document.getElementsByClassName("eight_page")[0];
+        var page_9 = document.getElementsByClassName("ninth_page")[0];
+        var page_10 = document.getElementsByClassName("tenth_page")[0];
         var cont_page = new Array();
     </script>
+
+    
+<?php
+        for ($count = 1; $count <= 101; $count++) {
+                        if ($count <= 10){
+                            $phrase = "1 x ";
+                            $compute =  $count * 1;
+                            echo "<script> 
+                            cont_page[$count] = '$phrase $count = $compute<br>';
+                        </script>";
+                        }
+                        else if ($count >= 10 && $count <= 20 ){
+                            $count_res = $count - 10;
+                            $phrase = "2 x ";
+                            $compute =  ($count_res) * 2;
+                            echo "<script> 
+                            cont_page[$count] = '$phrase $count_res = $compute<br>';
+                        </script>";
+                        }
+                        else if ($count >= 20 && $count <= 30 ){
+                            $count_res = $count - 20;
+                            $phrase = "3 x ";
+                            $compute =  ($count_res) * 3;
+                            echo "<script> 
+                            cont_page[$count] = '$phrase $count_res = $compute<br>';
+                        </script>";
+                        }
+                        else if ($count >= 30 && $count <= 40){
+                            $count_res = $count - 30;
+                            $phrase = "4 x ";
+                            $compute =  ($count_res) * 4;
+                            echo "<script> 
+                            cont_page[$count] = '$phrase $count_res = $compute<br>';
+                        </script>";
+                        }
+                        else if ($count >= 40 && $count <= 50){
+                            $count_res = $count - 40;
+                            $phrase = "5 x ";
+                            $compute =  ($count_res) * 5;
+                            echo "<script> 
+                            cont_page[$count] = '$phrase $count_res = $compute<br>';
+                        </script>";
+                        }
+                        else if ($count >= 50 && $count <= 60){
+                            $count_res = $count - 50;
+                            $phrase = "6 x ";
+                            $compute =  ($count_res) * 6;
+                            echo "<script> 
+                            cont_page[$count] = '$phrase $count_res = $compute<br>';
+                        </script>";
+                        }
+                        else if ($count >= 60 && $count <= 70){
+                            $count_res = $count - 60;
+                            $phrase = "7 x ";
+                            $compute =  ($count_res) * 7;
+                            echo "<script> 
+                            cont_page[$count] = '$phrase $count_res = $compute<br>';
+                        </script>";
+                        }
+                        else if ($count >= 70 && $count <= 80){
+                            $count_res = $count - 70;
+                            $phrase = "8 x ";
+                            $compute =  ($count_res) * 8;
+                            echo "<script> 
+                            cont_page[$count] = '$phrase $count_res = $compute<br>';
+                        </script>";
+                        }
+                        else if ($count >= 80 && $count <= 90){
+                            $count_res = $count - 80;
+                            $phrase = "9 x ";
+                            $compute =  ($count_res) * 9;
+                            echo "<script> 
+                            cont_page[$count] = '$phrase $count_res = $compute<br>';
+                        </script>";
+                        }
+                        else if ($count >= 90 && $count <= 100){
+                            $count_res = $count - 90;
+                            $phrase = "10 x ";
+                            $compute =  ($count_res) * 10;
+                            echo "<script> 
+                            cont_page[$count] = '$phrase $count_res = $compute<br>';
+                        </script>";
+                        }
+        }
+    ?>
   
     <div class="d-flex mt-2 justify-content-between px-5">
         <button type="button" class="btn btn-outline-info" onclick="progress_prev(2)">Prev</button>
@@ -189,8 +213,6 @@
         </div>
         <button type="button" class="btn btn-outline-info" onclick="progress_next(2)">Next</button>
     </div>
-
-    <button type="button" onclick="Multiplier()">start</button>
 </body>
 
 <script src="./resources/js/multiplier.js"></script>
