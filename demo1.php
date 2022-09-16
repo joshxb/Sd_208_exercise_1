@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./resources/css/bootstap.min.css">
     <link rel="stylesheet" href="./resources/css/style.css">
     <script src="./resources/js/boostrap_bundle.js"></script>
+    <script src="./resources/js/progress.js"></script>
     <title>Descending Order Arrays</title>
 </head>
 
@@ -69,7 +70,9 @@
             <img src="./resources/img/web_dev_logo.png" alt="">
         </div>
     </div>
-
+    <div class="mask bg-black w-100 h-100">
+    qsqsq
+    </div>
     <main class="main">
         <h2>Descending Order Arrays</h2>
         <form class="was-validated" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -109,16 +112,17 @@
         }
 
         ?>
-        <div class="container mt-6 position-relative top-10">
-            <div class="progress">
-                <div class="progress-bar" style="width:70%">70%</div>
-            </div>
-        </div>
+     
 
     </main>
     <div class="d-flex mt-2 justify-content-between px-5">
-        <button type="button" class="btn btn-outline-primary">Prev</button>
-        <button type="button" class="btn btn-outline-primary">Next</button>
+        <button type="button" class="btn btn-outline-info" onclick="progress_prev(1)">Prev</button>
+        <div class="container progress-container w-50" style="position:relative;">
+            <div class="progress">
+                <div class="progress-bar" style="width:0%">0%</div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-info" onclick="progress_next(1)">Next</button>
     </div>
 
 

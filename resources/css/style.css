@@ -2,23 +2,32 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background: black;
-    background-image: url('https://flatironschool.com/wp-content/uploads/2022/07/Coding-for-Beginners-_-Intro-to-Git-and-GitHub-9.7.2022-2-768x384.png');
+    background: rgba(159, 90, 253);
+    /* background-image: url('https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'); */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+.mask{
+    background:black; 
+    position:absolute;
+    z-index:-1;
+    opacity:0.3;
+}
 .main {
-    background: rgba(71, 166, 209, 0.89);
+    background: rgba(71, 165, 209, 0.74);
     border-left: 5px solid white;
     border-right: 5px solid white;
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid red; */
     padding-top: 5rem;
     margin-bottom: 10rem;
     height: 35rem;
     width: 95%;
     margin: auto;
     overflow-y: auto;
+    opacity:1;
 }
-.main::-webkit-scrollbar{
+
+.main::-webkit-scrollbar {
     display: none;
 }
 
@@ -72,7 +81,7 @@ ul {
 }
 
 .canvas {
-    background: black !important;
+    background: rgba(159, 90, 253) !important;
 
 }
 
@@ -110,5 +119,5 @@ ul {
 }
 
 .canvas li:hover {
-    background: rgba(71, 166, 209, 0.89);
+    background: black;
 }
