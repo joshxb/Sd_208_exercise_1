@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item d-flex">
-                        <a class="nav-link bg-gradient" href="./demo1.php">Demo1</a>
+                        <a class="nav-link bg-black" href="./demo1.php">Demo1</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link bg-gradient" href="./demo2.php">Demo2</a>
@@ -54,25 +54,23 @@
                 <a href="./demo1.php">
                     <li>Descending Order Arrays</li>
                 </a>
-                <a href="./demo2.php">
+                <a onclick="progress_next(1)">
                     <li>Multiplication Table</li>
                 </a>
-                <a href="./demo3.php">
+                <a onclick="progress_next(2)">
                     <li>Sort of Arrays</li>
                 </a>
-                <a href="./demo4.php">
+                <a onclick="progress_next(3)">
                     <li>Numbers from 1 to 50</li>
                 </a>
-                <a href="./demo5.php">
+                <a onclick="progress_prev(1)">
                     <li>The Largest Number</li>
                 </a>
             </ul>
             <img src="./resources/img/web_dev_logo.png" alt="">
         </div>
     </div>
-    <div class="mask bg-black w-100 h-100">
-    qsqsq
-    </div>
+    <div class="mask bg-black w-100 h-100"></div>
     <main class="main">
         <h2>Descending Order Arrays</h2>
         <form class="was-validated" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
