@@ -70,8 +70,14 @@
         </div>
     </div>
     <div class="mask bg-black w-100 h-100"></div>
-    <main class="main">
+    <main class="main text-center">
         <h3>Numbers from 1 to 50</h3>
+        <button class="bg-black text-light p-2 border border-2"  onclick="Writer()" type="button" >Start</button>
+        <div id="number-list" style="text-align:center;"></div>
+        <script>
+            var text = document.getElementById('number-list');
+            var txt = new Array();
+        </script>
         <?php
         $start = 1;
         $color1 = 'style="color:red"';
@@ -81,13 +87,25 @@
         echo "<ul>";
         for (; $start <= 50;) {
             if ($start % 3 == 0 && $start % 5 == 0) {
-                echo "<li $color3>FizzBuzz</li>";
+                // echo "<li $color3>FizzBuzz</li>";
+                echo "<script>
+                txt[$start] = '<li $color3>FizzBuzz</li>'
+                </script>";
             } else if ($start % 3 == 0) {
-                echo "<li $color1>Fizz</li>";
+                // echo "<li $color1>Fizz</li>";
+                echo "<script>
+                txt[$start] = '<li $color1>Fizz</li>'
+                </script>";
             } else if ($start % 5 == 0) {
-                echo "<li $color2>Buzz</li>";
+                // echo "<li $color2>Buzz</li>";
+                echo "<script>
+                txt[$start] = '<li $color2>Buzz</li>'
+                </script>";
             } else {
-                echo "<li>$start</li>";
+                // echo "<li>$start</li>";
+                echo "<script>
+                txt[$start] = '<li>$start</li>'
+                </script>";
             }
             $start++;
         }
@@ -95,6 +113,18 @@
         echo "</ul>";
 
         ?>
+        <script>
+            var i = 1;
+            var speed = 50;
+
+            function Writer() {
+                if (i < txt.length) {
+                    text.innerHTML += txt[i];
+                    i++;
+                    setTimeout(Writer, speed);
+                }
+            }
+        </script>
 
     </main>
     <div class="d-flex mt-2 justify-content-between px-5">

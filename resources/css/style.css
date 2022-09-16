@@ -124,3 +124,7 @@ ul {
 .canvas li:hover {
     background: black;
 }
+
+#number-list li{
+    list-style-type: none;
+}
